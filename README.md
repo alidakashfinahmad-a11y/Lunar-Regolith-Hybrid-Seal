@@ -55,9 +55,9 @@ By tweaking the configuration variables within the C sandbox compiler, the mecha
 * *Status:* Passed / Mission Success
 * *Observation:* The active electrostatic layer reduced the dust density load by 85%, significantly mitigating the friction wear curve on the secondary seal. The mechanism maintained complete mechanical integrity throughout the entire ascent profile, successfully surviving past Earth's escape velocity limits.
 
-## 🚀6. Conclusion & Future Outlook
+---  
+
+## 🚀 6. Conclusion & Future Outlook
 This project demonstrates that relying on a single, isolated engineering mechanism creates a fragile single point of failure in deep-space environments. By combining electronic fields with physical mechanical boundaries, component lifespans can be exponentially extended. Future work on this project will involve optimizing the specific convergence angles of the mechanical lips to lower rotational torque resistance.
+*past Earth's escape velocity limits.
 
-
-## 6. Conclusion & Future Outlook
-This project demonstrates that relying on a singl
