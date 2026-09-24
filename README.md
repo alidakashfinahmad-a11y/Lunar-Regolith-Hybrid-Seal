@@ -17,7 +17,7 @@ This project utilizes a *System Integration* strategy to implement a multi-layer
 
 * *Layer 1 (Active EDS):* Uses alternating, multi-phase electric field tracks printed around the entryway rim. It generates an electrostatic traveling wave to repel up to 85% of positively charged fine regolith particles before they make physical contact.
 * *Layer 2 (Passive Mechanical Seal):* A custom spring-energized Teflon (PTFE) lip seal that acts as both a physical debris scraper and a critical thermal insulation barrier to eliminate extreme temperature differentials that cause material cracking.
-* The secondary barrier utilizes Polytetrafluoroethylene (PTFE), commonly known as Teflon, represented by the chemical formula:
+The secondary barrier (Layer 2) utilizes Polytetrafluoroethylene (PTFE), commonly known as Teflon, represented by the chemical formula:
 $$\text{(C}_2\text{F}_4)_n$$
 
 ### Material Engineering Analysis: Why Teflon (PTFE)?
