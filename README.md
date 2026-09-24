@@ -1,4 +1,4 @@
-Integrated Hybrid Dust Mitigation System for Lunar Articulated Joints
+Integrated Hybrid Dust Mitigation System for Lunar Rocket Thrust Vector Actuators
 
 ## 📝1. Abstract
 This project presents the design, spatial modeling, and computational evaluation of a multi-layered hybrid mechanism engineered to protect mechanical joints from abrasive lunar regolith (dust). Recognizing the trade-offs of existing NASA theories, this system integrates an active Electrodynamic Dust Shield (EDS) with a passive, spring-loaded mechanical lip seal. The design was conceptualized via hand-drawn blueprints, prototyped physically using structural mockups, modeled in 3D using Onshape CAD, and validated through a physics-based C-programmed simulation evaluating component life-span during lunar ascent and escape velocity profiles.
