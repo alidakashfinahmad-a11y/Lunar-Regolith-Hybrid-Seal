@@ -12,11 +12,19 @@ Lunar dust consists of sharp, glass-like, highly abrasive, and electrostatically
 
 ---
 
-## ⚙️3. The Engineering Solution & Structural Design
-This project utilizes a *System Integration* strategy to implement a two-layer defense mechanism:
-* *Layer 1 (Active EDS):* Uses alternating electric fields to lift and repel up to 85% of electrostatically charged fine dust particles away from the joint entry point before they make physical contact.
-* *Layer 2 (Passive Mechanical Seal):* A secondary fail-safe consisting of a spring-loaded resilient membrane that mechanically wipes away any coarse debris or unrepelled particles.
+## ⚙️ 3. The Engineering Solution & Structural Design
+This project utilizes a *System Integration* strategy to implement a multi-layered environmental protection sleeve wrapped directly around the moving shaft of a rocket's Thrust Vector Actuator:
 
+* *Layer 1 (Active EDS):* Uses alternating, multi-phase electric field tracks printed around the entryway rim. It generates an electrostatic traveling wave to repel up to 85% of positively charged fine regolith particles before they make physical contact.
+* *Layer 2 (Passive Mechanical Seal):* A custom spring-energized Teflon (PTFE) lip seal that acts as both a physical debris scraper and a critical thermal insulation barrier to eliminate extreme temperature differentials that cause material cracking.
+
+### Material Engineering Analysis: Why Teflon (PTFE)?
+Teflon was selected based on documented NASA Glenn structural testing protocols for extreme space environments:
+1. *Cryogenic Flexibility:* Unlike standard elastomers that become brittle and shatter in space, PTFE retains structural elasticity from $-200^\circ\text{C}$ to $+260^\circ\text{C}$.
+2. *Vacuum Stability & Low Friction:* PTFE has an incredibly low coefficient of friction, acting as a self-lubricating seal without needing liquid lubricants (which instantly evaporate in a vacuum). It also exhibits near-zero outgassing.
+
+### Overcoming Material Trade-offs (Creep & Cold Flow)
+A recognized structural drawback of pure Teflon is its tendency to experience mechanical *creep (cold flow)—slow plastic deformation under continuous structural loads. To mitigate this structural vulnerability, our design embeds an internal metal **canted-coil spring* inside the U-shaped wedge profile of the seal. As the Teflon material undergoes operational wear and deflection, the spring constantly applies uniform mechanical pressure outward, ensuring a tight, permanent, dust-proof squeegee seal against the sliding actuator pin over extended durations.
 ### Design Evolution Portfolio
 (Uncomment these image tags on GitHub once you upload your photos to the repository!)
 
