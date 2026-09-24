@@ -57,5 +57,7 @@ By tweaking the configuration variables within the C sandbox compiler, the mecha
 
 ## 🚀6. Conclusion & Future Outlook
 This project demonstrates that relying on a single, isolated engineering mechanism creates a fragile single point of failure in deep-space environments. By combining electronic fields with physical mechanical boundaries, component lifespans can be exponentially extended. Future work on this project will involve optimizing the specific convergence angles of the mechanical lips to lower rotational torque resistance.
+
+
 ## 6. Conclusion & Future Outlook
 This project demonstrates that relying on a singl
