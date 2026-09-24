@@ -33,13 +33,17 @@ This project utilizes a *System Integration* strategy to implement a two-layer d
 To evaluate the mathematical validity of the integrated system, a trajectory simulation was written in C. The algorithm tracks structural wear profiles alongside core orbital equations derived from Newton's Laws and gravitational mechanics, testing how long the joint remains operational when flying through atmospheric debris fields toward escape velocity thresholds.
 
 ### Mathematical Framework Utilized:
+*1. Dynamic Gravitational Force:*  
 $$g = \frac{G \cdot M_{earth}}{(R_{earth} + altitude)^2}$$
+<br>
+
+*2. Escape Velocity Threshold:*  
 $$v_e = \sqrt{\frac{2 \cdot G \cdot M_{earth}}{R_{earth} + altitude}}$$
+<br>
+
+*3. Wear Accumulation Loop:*  
 $$\Delta \text{Wear} = \text{Dust Density} \times \text{System Leakage Factor} \times \Delta t$$
-The full source code can be reviewed in the src/simulation.c directory of this repository.
-
----
-
+<br>
 ## 5. Simulation Results & Engineering Analysis
 By tweaking the configuration variables within the C sandbox compiler, the mechanism was tested under two critical conditions:
 
