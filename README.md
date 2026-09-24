@@ -29,6 +29,12 @@ This project utilizes a *System Integration* strategy to implement a two-layer d
 #### Phase 3: Onshape 3D CAD Production
 <!-- <img src="onshape_cad.png" width="400" alt="Onshape 3D CAD Model"> -->
 
+> [!NOTE]
+> Based on historical NASA Glenn Research Center testing, the secondary Teflon (PTFE) 
+> layer functions as both a mechanical dust scraper and a critical thermal barrier. 
+> It dampens the severe temperature differentials caused by engine plume radiation, 
+> preventing local thermal expansion stresses that cause material degradation and cracking.
+
 ---
 
 ## 💻4. Computational Physics Model (C Simulation)
