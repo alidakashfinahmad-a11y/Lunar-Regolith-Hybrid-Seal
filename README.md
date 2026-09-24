@@ -49,7 +49,7 @@ $$\Delta \text{Wear} = \text{Dust Density} \times \text{System Leakage Factor} \
 ## 📊5. Simulation Results & Engineering Analysis
 By tweaking the configuration variables within the C sandbox compiler, the mechanism was tested under two critical conditions:
 
-### Case A > !WARNING]
+### Case A > [!WARNING]
 > CRITICAL INSTABILITY: Without active repulsion, abrasive wear metrics exceed 100 units, causing immediate structural lockup.
 : Control Group (Systems Disabled / Power Failure)
 * *Status:* Failed
