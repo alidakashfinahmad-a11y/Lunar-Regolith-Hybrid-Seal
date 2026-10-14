@@ -5,6 +5,7 @@ This log acts as a chronological record of research analysis, layout iterations,
 ---
 
 ### 🗓️ Week 1: Project Initialization & Theoretical Framing
+## [Phase 1]
 * *Activity:* Initialized remote GitHub workspace repository shell. Formatted textbook equations using LaTeX typography.
 * *Literature Sources Analyzed:* 
   1. NASA Technical Reports Server (NTRS) Document ID 20100021943 — Preliminary Assessment of Seals for Dust Mitigation of Mechanical Components (Delgado & Handschuh, NASA Glenn).
