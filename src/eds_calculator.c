@@ -2,66 +2,79 @@
 #include <math.h>
 
 int main() {
-    // --- CORE ASTRONOMICAL & MATERIAL CONSTANTS ---
-    const double G = 6.6743e-11;          // Universal Gravitational Constant (m^3 kg^-1 s^-2)
-    const double M_EARTH = 5.972e24;      // Mass of the Earth (kg)
-    const double R_EARTH = 6.371e6;       // Radius of the Earth (meters)
+    // --- CORE ASTRONOMICAL & LUNAR MATERIAL CONSTANTS ---
+    const double G = 6.6743e-11;            // Universal Gravitational Constant (m^3 kg^-1 s^-2)
+    const double M_MOON = 7.342e22;         // Exact mass of the Moon (kg)
+    const double R_MOON = 1737400.0;        // Mean volumetric radius of the Moon (meters)
     
-    // --- SIMULATION CONFIGURATION ---
-    double altitude = 0.0;                // Starting altitude at sea level (meters)
-    double velocity = 0.0;                // Starting velocity (m/s)
-    double acceleration = 25.5;           // Simulated constant rocket engine acceleration (m/s^2)
-    double time_step = 1.0;               // Time increments (dt = 1 second)
-    double elapsed_time = 0.0;            // Total elapsed time tracking (seconds)
+    // --- SIMULATION RUNTIME CONFIGURATION ---
+    double altitude = 0.0;                  // Initial altitude tracking above surface bounds (m)
+    double velocity = 0.0;                  // Ascent kinetic velocity tracker (m/s)
+    double acceleration = 4.50;             // Constant lunar liftoff motor thrust acceleration (m/s^2)
+    double time_step = 1.0;                 // Discrete step integration window (dt = 1 second)
+    double elapsed_time = 0.0;              // Cumulative tracking timer array (seconds)
     
-    // --- STRUCTURAL WEAR PROFILE CONFIGURATION ---
-    double wear_metric = 0.0;             // Cumulative wear damage index
-    double max_wear_tolerance = 100.0;    // Maximum wear tolerance before mechanical lockup
-    double base_dust_density = 0.005;     // Environmental debris concentration factor
+    // --- STRUCTURAL DEGRADATION & WEAR PROFILE PARAMETERS ---
+    double wear_metric = 0.0;               // Abrasive friction wear damage accumulation metric
+    double max_wear_tolerance = 100.0;      // Critical structural lockup wear ceiling limit
+    double base_dust_density = 0.085;       // Volumetric density coefficient of levitated lunar regolith
     
-    // CHANGE THIS VARIABLE TO SIMULATE CASE A vs CASE B
-    // 0 = Systems Disabled (Control Group) | 1 = Hybrid System Active (Experimental Group)
-    int hybrid_system_active = 1;         
+    // --- ACTIVE / PASSIVE HYBRID SEAL MITIGATION PARAMETERS ---
+    // 0 = Protective Systems Offline (Control) | 1 = Hybrid Teflon Spring + Active EDS Matrix Online
+    int hybrid_system_active = 1;
     
-    double leakage_factor = (hybrid_system_active == 1) ? 0.15 : 1.00; // 85% dust mitigation if active
-
-    printf("--- Thrust Vector Actuator Dust Mitigation Simulation ---\n");
-    printf("System Status: %s\n\n", (hybrid_system_active == 1) ? "HYBRID ACTIVE (Case B)" : "SYSTEMS DISABLED (Case A)");
-    printf("Time(s)\tAltitude(km)\tVelocity(m/s)\tEscape_V(m/s)\tWear_Index\n");
-    printf("------------------------------------------------------------------\n");
-
-    // --- COMPUTATIONAL PHYSICS LOOP ---
+    // Combined active traveling wave electrostatic repulsion and passive PTFE physical displacement
+    // yields a total systemic leakage factor of only 8% (92% particle rejection efficiency profile).
+    double leakage_factor = (hybrid_system_active == 1) ? 0.08 : 1.00;
+    
+    printf("=====================================================================\n");
+    printf(" LUNAR REGOLITH ACTIVE/PASSIVE MITIGATION ACTUATOR SIMULATION\n");
+    printf("=====================================================================\n");
+    printf("Time(s) | Alt(km) | Vel(m/s) | EscVel(m/s) | Actuator Wear Status\n");
+    printf("---------------------------------------------------------------------\n");
+    
+    // Core simulation loop running until vehicle hits escape velocity or hardware component jams
     while (wear_metric < max_wear_tolerance) {
-        
-        double current_radius = R_EARTH + altitude;
-        double g_dynamic = (G * M_EARTH) / (current_radius * current_radius);
-        double escape_velocity = sqrt((2.0 * G * M_EARTH) / current_radius);
-        
-        velocity += (acceleration - g_dynamic) * time_step;
-        altitude += velocity * time_step;
         elapsed_time += time_step;
         
-        wear_metric += (base_dust_density * leakage_factor * (velocity * 0.01)) * time_step;
+        // Classical kinematic equations of motion updates
+        velocity += acceleration * time_step;
+        altitude += (velocity * time_step) + (0.5 * acceleration * pow(time_step, 2));
         
+        // Dynamically compute orbital escape velocity relative to current lunar altitude profile
+        double current_radius = R_MOON + altitude;
+        double escape_velocity = sqrt((2.0 * G * M_MOON) / current_radius);
+        
+        // Dynamic Environmental Dust Decay Function: Electrostatic levitated particulate concentrations
+        // thin out exponentially as the ascending craft leaves the lowest 50 kilometers of the lunar sky.
+        double altitude_density_decay = exp(-altitude / 50000.0);
+        
+        // Instantaneous wear is a dynamic product of speed velocity friction, material density, and mitigation efficiency
+        double instantaneous_wear = base_dust_density * (velocity * 0.005) * altitude_density_decay * leakage_factor;
+        wear_metric += instantaneous_wear;
+        
+        // Log telemetry lines to output matrix every 10 seconds of simulated timeline execution
         if ((int)elapsed_time % 10 == 0) {
-            printf("%.0fs\t%.2f km\t%.1f m/s\t%.1f m/s\t%.2f\n", 
-                   elapsed_time, (altitude / 1000.0), velocity, escape_velocity, wear_metric);
+            printf("%-8.0f| %-8.2f| %-9.1f| %-12.1f| %-5.2f / %.1f\n", 
+                   elapsed_time, (altitude / 1000.0), velocity, escape_velocity, wear_metric, max_wear_tolerance);
         }
         
+        // Break integration loop if vehicle successfully matches local escape velocity parameters
         if (velocity >= escape_velocity) {
             break;
         }
     }
-
-    printf("------------------------------------------------------------------\n");
-    printf("Simulation terminated at execution time: %.0f seconds.\n", elapsed_time);
-    printf("Final Profile Metric: Wear = %.2f / %.0f\n", wear_metric, max_wear_tolerance);
+    
+    printf("---------------------------------------------------------------------\n");
+    printf("Simulation terminated at execution time: %.1f seconds.\n", elapsed_time);
+    printf("Final Mechanical Structural Metric: Wear Index = %.2f / %.1f\n", wear_metric, max_wear_tolerance);
     
     if (wear_metric >= max_wear_tolerance) {
-        printf("\n[❌ CRITICAL INSTABILITY]: Actuator wear exceeded tolerance limit! Mechanical structural lockup occurred. Mission Status: FAILED.\n");
+        printf("\n[X] CRITICAL INSTABILITY: Actuator seal compromised! High-abrasion dust ingress triggered actuator lockup. Mission Status: FAILED.\n");
     } else {
-        printf("\n[🚀 MISSION SUCCESS]: Vehicle safely exceeded Escape Velocity thresholds! Actuator structural integrity maintained. Mission Status: PASSED.\n");
+        printf("\n[✓] MISSION SUCCESS: Vehicle reached Lunar Escape Velocity! Active EDS matrix and passive spring Teflon ring preserved mechanical alignment. Mission Status: PASSED.\n");
     }
+    printf("=====================================================================\n");
     
     return 0;
 }
