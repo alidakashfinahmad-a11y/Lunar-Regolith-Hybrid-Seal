@@ -28,16 +28,11 @@ Teflon was selected based on documented NASA Glenn structural testing protocols 
 A recognized structural drawback of pure Teflon is its tendency to experience mechanical *creep (cold flow)—slow plastic deformation under continuous structural loads. To mitigate this structural vulnerability, our design embeds an internal metal **canted-coil spring* inside the U-shaped wedge profile of the seal. As the Teflon material undergoes operational wear and deflection, the spring constantly applies uniform mechanical pressure outward, ensuring a tight, permanent, dust-proof squeegee seal against the sliding actuator pin over extended durations.
 ### 📊 Project Layout Visuals
 
-#### 1. Baseline Part Environment & Cross-Section Slicing
-![Cylinder Workspace Mapping](Screenshot%202026-10-14%20221810.png)
-
-#### 2. Hand-Fitted Sleeve Pocket Geometry
-![Empirical Pocket Outline](Screenshot%202026-10-14%20221948.png)
-#### 3.Final Dynamic Shield Including Integrated EDS and Spring Loaded Teflon
- A.<img width="1920" height="1080" alt="Screenshot 2026-10-27 031354" src="https://github.com/user-attachments/assets/d06748cb-05b0-4e28-81be-dd7bc3d4e6e1" />
- B.<img width="1920" height="1080" alt="Screenshot 2026-10-30 194451" src="https://github.com/user-attachments/assets/21bd35ca-9d3a-45d5-bb50-8f1c26534000" />
- C.<img width="1920" height="1080" alt="Screenshot 2026-10-30 194513" src="https://github.com/user-attachments/assets/74cf13a2-b057-4b87-bcf6-07b519371dfc" />
- D.<img width="1920" height="1080" alt="Screenshot 2026-10-30 194411" src="https://github.com/user-attachments/assets/852fa261-142c-4e64-b76f-aca4dd2908b2" />
+#### 1.Final Dynamic Shield Including Integrated EDS and Spring Loaded Teflon
+ 1(A).<img width="1920" height="1080" alt="Screenshot 2026-10-27 031354" src="https://github.com/user-attachments/assets/d06748cb-05b0-4e28-81be-dd7bc3d4e6e1" />
+ 1(B).<img width="1920" height="1080" alt="Screenshot 2026-10-30 194451" src="https://github.com/user-attachments/assets/21bd35ca-9d3a-45d5-bb50-8f1c26534000" />
+ 1(C).<img width="1920" height="1080" alt="Screenshot 2026-10-30 194513" src="https://github.com/user-attachments/assets/74cf13a2-b057-4b87-bcf6-07b519371dfc" />
+ 1(D).<img width="1920" height="1080" alt="Screenshot 2026-10-30 194411" src="https://github.com/user-attachments/assets/852fa261-142c-4e64-b76f-aca4dd2908b2" />
 
 
 
