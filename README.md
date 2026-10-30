@@ -26,16 +26,6 @@ Teflon was selected based on documented NASA Glenn structural testing protocols 
 
 ### Overcoming Material Trade-offs (Creep & Cold Flow)
 A recognized structural drawback of pure Teflon is its tendency to experience mechanical *creep (cold flow)—slow plastic deformation under continuous structural loads. To mitigate this structural vulnerability, our design embeds an internal metal **canted-coil spring* inside the U-shaped wedge profile of the seal. As the Teflon material undergoes operational wear and deflection, the spring constantly applies uniform mechanical pressure outward, ensuring a tight, permanent, dust-proof squeegee seal against the sliding actuator pin over extended durations.
-### Design Evolution Portfolio
-(Uncomment these image tags on GitHub once you upload your photos to the repository!)
-
-#### Phase 1: Hand-Drawn Blueprint Space Allocation
-<!-- <img src="hand_sketch.jpg" width="400" alt="Hand Sketch Blueprint"> -->
-
-#### Phase 2: Cardboard, Balloon, and PVC Physical Mockup
-<!-- <img src="physical_mockup.jpg" width="400" alt="Physical Mockup"> -->
-
-#### Phase 3: Onshape 3D CAD Production
 ### 📊 Project Layout Visuals
 
 #### 1. Baseline Part Environment & Cross-Section Slicing
@@ -67,6 +57,18 @@ $$v_e = \sqrt{\frac{2 \cdot G \cdot M_{earth}}{R_{earth} + altitude}}$$
 *3. Wear Accumulation Loop:*  
 $$\Delta \text{Wear} = \text{Dust Density} \times \text{System Leakage Factor} \times \Delta t$$
 <br>
+*4. Active Electrostatic Clearing Force
+The dielectrophoretic sorting force ($F_{DEP}$) generated across the thin-film outer envelope layer to repel ambient particulate streams:
+$$F_{DEP} = 2\pi \epsilon_m r^3 \text{Re}[K(\omega)] \nabla E_{RMS}^2$$
+*   Where $r$ tracks incoming regolith micro-radius parameters, and $\nabla E_{RMS}^2$ maps the spatial gradient tracking square of the electric field intensity matrix.
+
+---
+## 💻 Simulation Architecture (`src/eds_calculator.c`)
+The repository features an automated simulation module compiled in standard C language based on explicit Lunar physics constants ($M_{Moon} = 7.342 \times 10^{22} \text{ kg}$, $R_{Moon} = 1,737.4 \text{ km}$).
+
+### Project Performance Metrics
+*   **Control Group (Systems Offline):** 100% dust leakage coefficient leading to rapid structural mechanical failure under 60 seconds of ascent flight time.
+*   **Experimental Group (Hybrid Active/Passive Matrix):** 92% dust deflection clearance efficiency profile, maintaining absolute structural clearance limits up to orbit escape velocity thresholds.
 ## 📊5. Simulation Results & Engineering Analysis
 By tweaking the configuration variables within the C sandbox compiler, the mechanism was tested under two critical conditions:
 
