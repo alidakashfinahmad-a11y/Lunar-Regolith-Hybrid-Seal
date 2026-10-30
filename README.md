@@ -35,8 +35,9 @@ A recognized structural drawback of pure Teflon is its tendency to experience me
 ![Empirical Pocket Outline](Screenshot%202026-10-14%20221948.png)
 #### 3.Final Dynamic Shield Including Integrated EDS and Spring Loaded Teflon
  A.<img width="1920" height="1080" alt="Screenshot 2026-10-27 031354" src="https://github.com/user-attachments/assets/d06748cb-05b0-4e28-81be-dd7bc3d4e6e1" />
- B.<img width="1920" height="1080" alt="Screenshot 2026-10-30 181311" src="https://github.com/user-attachments/assets/d5b7dbc9-72ea-45f3-b3e8-6311c20d0000" />
- C.<img width="1920" height="1080" alt="Screenshot 2026-10-30 184502" src="https://github.com/user-attachments/assets/05423c4c-11f6-490e-ad47-fb5e201c8770" />
+ B.<img width="1920" height="1080" alt="Screenshot 2026-10-30 194451" src="https://github.com/user-attachments/assets/21bd35ca-9d3a-45d5-bb50-8f1c26534000" />
+ C.<img width="1920" height="1080" alt="Screenshot 2026-10-30 194513" src="https://github.com/user-attachments/assets/74cf13a2-b057-4b87-bcf6-07b519371dfc" />
+ D.<img width="1920" height="1080" alt="Screenshot 2026-10-30 194411" src="https://github.com/user-attachments/assets/852fa261-142c-4e64-b76f-aca4dd2908b2" />
 
 
 
