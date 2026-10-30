@@ -33,6 +33,12 @@ A recognized structural drawback of pure Teflon is its tendency to experience me
 
 #### 2. Hand-Fitted Sleeve Pocket Geometry
 ![Empirical Pocket Outline](Screenshot%202026-10-14%20221948.png)
+#### 3.Final Dynamic Shield Including Integrated EDS and Spring Loaded Teflon
+ A.<img width="1920" height="1080" alt="Screenshot 2026-10-27 031354" src="https://github.com/user-attachments/assets/d06748cb-05b0-4e28-81be-dd7bc3d4e6e1" />
+ B.<img width="1920" height="1080" alt="Screenshot 2026-10-30 181311" src="https://github.com/user-attachments/assets/d5b7dbc9-72ea-45f3-b3e8-6311c20d0000" />
+ C.<img width="1920" height="1080" alt="Screenshot 2026-10-30 184502" src="https://github.com/user-attachments/assets/05423c4c-11f6-490e-ad47-fb5e201c8770" />
+
+
 
 > [!NOTE]
 > Based on historical NASA Glenn Research Center testing, the secondary Teflon (PTFE) 
