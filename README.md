@@ -30,14 +30,13 @@ A recognized structural drawback of pure Teflon is its tendency to experience me
 
 #### 1.Final Dynamic Shield Including Integrated EDS and Spring Loaded Teflon
  1(A).MAIN BODY
- <img width="1920" height="1080" alt="Screenshot 2026-10-27 031354" src="https://github.com/user-attachments/assets/d06748cb-05b0-4e28-81be-dd7bc3d4e6e1" />
+ <img width="1506" height="790" alt="Screenshot 2026-10-27 031354" src="https://github.com/user-attachments/assets/724e2fb6-9c00-4aac-b548-c6217e62e7df" />
  1(B).SPRING LOADED BODY
- <img width="1920" height="1080" alt="Screenshot 2026-10-30 194451" src="https://github.com/user-attachments/assets/21bd35ca-9d3a-45d5-bb50-8f1c26534000" />
+ <img width="1920" height="1015" alt="Screenshot 2026-10-30 194451" src="https://github.com/user-attachments/assets/bba02db4-0bbe-438e-bef2-acdb91a1a6a1" />
  1(C).TEFLON BODY
- <img width="1920" height="1080" alt="Screenshot 2026-10-30 194513" src="https://github.com/user-attachments/assets/74cf13a2-b057-4b87-bcf6-07b519371dfc" />
+ <img width="1920" height="989" alt="Screenshot 2026-10-30 194513" src="https://github.com/user-attachments/assets/410ff7ad-5a01-45e1-9a96-358442f6a962" />
  1(D).ELECTRODES FOR EDS(ELECTROSTATIC DUST SHIELD) SHEET
- <img width="1920" height="1080" alt="Screenshot 2026-10-30 194411" src="https://github.com/user-attachments/assets/852fa261-142c-4e64-b76f-aca4dd2908b2" />
-
+ <img width="1920" height="1022" alt="Screenshot 2026-10-30 194411" src="https://github.com/user-attachments/assets/d1322c3e-f3f5-4b62-b4d0-a09e8ecd00bb" />
 
 
 > [!NOTE]
