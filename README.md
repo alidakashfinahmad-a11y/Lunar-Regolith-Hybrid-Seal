@@ -33,8 +33,10 @@ A recognized structural drawback of pure Teflon is its tendency to experience me
  <img width="1920" height="1080" alt="Screenshot 2026-10-27 031354" src="https://github.com/user-attachments/assets/d06748cb-05b0-4e28-81be-dd7bc3d4e6e1" />
  1(B).SPRING LOADED BODY
  <img width="1920" height="1080" alt="Screenshot 2026-10-30 194451" src="https://github.com/user-attachments/assets/21bd35ca-9d3a-45d5-bb50-8f1c26534000" />
- 1(C).<img width="1920" height="1080" alt="Screenshot 2026-10-30 194513" src="https://github.com/user-attachments/assets/74cf13a2-b057-4b87-bcf6-07b519371dfc" />
- 1(D).<img width="1920" height="1080" alt="Screenshot 2026-10-30 194411" src="https://github.com/user-attachments/assets/852fa261-142c-4e64-b76f-aca4dd2908b2" />
+ 1(C).TEFLON BODY
+ <img width="1920" height="1080" alt="Screenshot 2026-10-30 194513" src="https://github.com/user-attachments/assets/74cf13a2-b057-4b87-bcf6-07b519371dfc" />
+ 1(D).ELECTRODES FOR EDS(ELECTROSTATIC DUST SHIELD) SHEET
+ <img width="1920" height="1080" alt="Screenshot 2026-10-30 194411" src="https://github.com/user-attachments/assets/852fa261-142c-4e64-b76f-aca4dd2908b2" />
 
 
 
