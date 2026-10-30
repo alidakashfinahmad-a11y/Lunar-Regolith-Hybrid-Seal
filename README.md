@@ -57,7 +57,7 @@ $$v_e = \sqrt{\frac{2 \cdot G \cdot M_{earth}}{R_{earth} + altitude}}$$
 *3. Wear Accumulation Loop:*  
 $$\Delta \text{Wear} = \text{Dust Density} \times \text{System Leakage Factor} \times \Delta t$$
 <br>
-*4. Active Electrostatic Clearing Force
+4. Active Electrostatic Clearing Force
 The dielectrophoretic sorting force ($F_{DEP}$) generated across the thin-film outer envelope layer to repel ambient particulate streams:
 $$F_{DEP} = 2\pi \epsilon_m r^3 \text{Re}[K(\omega)] \nabla E_{RMS}^2$$
 *   Where $r$ tracks incoming regolith micro-radius parameters, and $\nabla E_{RMS}^2$ maps the spatial gradient tracking square of the electric field intensity matrix.
